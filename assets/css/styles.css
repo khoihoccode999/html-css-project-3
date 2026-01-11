@@ -190,3 +190,8 @@ button {
     border-radius: 6px;
     margin-left: -6px;
 }
+.hero__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
