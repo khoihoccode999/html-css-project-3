@@ -182,6 +182,10 @@ button {
     height: 540px;
     border-radius: 6px;
 }
+.hero__img:first-child {
+    position: relative;
+}
+
 .hero__img:last-child {
     margin-top: 65px;
     bottom: 65px;
