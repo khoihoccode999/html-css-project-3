@@ -62,6 +62,30 @@ button {
     opacity: 0.9;
     cursor: pointer;
 }
+
+.section-heading {
+    font-family: Sora;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 5rem;
+    line-height: 60px;
+    letter-spacing: -2%;
+    min-width: 311px;
+    opacity: 1;
+    color: #10375c;
+}
+.section-desc {
+    margin-top: 1.8rem;
+    max-width: 468px;
+    font-family: Sora;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #575f66;
+    opacity: 1;
+}
+
 /* =============================================== Header =============================================== */
 .header {
     padding-top: 30px;
@@ -211,32 +235,8 @@ button {
     padding: 170px 0;
 }
 
-.section-heading {
-    font-family: Sora;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 5rem;
-    line-height: 60px;
-    letter-spacing: -2%;
-    min-width: 311px;
-    opacity: 1;
-    color: #10375c;
-}
-
 .service-heading {
     text-align: center;
-}
-
-.section-desc {
-    margin-top: 1.8rem;
-    max-width: 468px;
-    font-family: Sora;
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 30px;
-    letter-spacing: 0%;
-    color: #575f66;
-    opacity: 1;
 }
 
 .service-desc {
@@ -394,4 +394,36 @@ button {
 .method-item:hover a {
     color: var(--btn-color);
     font-weight: 400;
+}
+/* =============================================== Feature =============================================== */
+
+.feature {
+    padding-top: 170px;
+}
+.feature-row {
+    display: flex;
+    gap: 130px;
+}
+
+.feature-img {
+    width: 512px;
+    height: 370px;
+    opacity: 1;
+    border-radius: 6px;
+    box-shadow: 0px 14px 28px 0px #00000012;
+}
+
+.feature-img:last-child {
+    max-width: 332px;
+    position: relative;
+    left: 238px;
+    bottom: 249px;
+}
+
+.feature-content {
+    margin-top: 82px;
+}
+
+.feature-btn {
+    margin-top: 38px;
 }
