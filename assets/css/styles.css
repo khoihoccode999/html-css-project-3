@@ -3,6 +3,7 @@
 }
 :root {
     --header-bg: #10375c;
+    --btn-color: #2e80ce;
 }
 
 html {
@@ -31,7 +32,7 @@ button {
     outline: none;
 }
 .btn {
-    min-width: 205px;
+    /* min-width: 205px;
     color: #ffffff;
     height: 60px;
     display: inline-block;
@@ -39,16 +40,29 @@ button {
     background-color: #2e80ce;
     font-weight: 400;
     font-style: Regular;
-    font-size: 18px;
+    font-size: 1.6rem;
     line-height: 30px;
     letter-spacing: 0%;
+    text-align: center; */
+    --height: 60px;
+    display: inline-block;
+    min-width: 205px;
+    height: var(--height);
+    padding: 0 20px;
+    border-radius: 99px;
+    border: 1px solid var(--btn-color);
+    font-size: 1.6rem;
+    font-weight: 400;
     text-align: center;
+    line-height: var(--height);
+    color: #fff;
+    background: var(--btn-color);
 }
 .btn:hover {
     opacity: 0.9;
     cursor: pointer;
 }
-/* === Header === */
+/* =============================================== Header =============================================== */
 .header {
     padding-top: 30px;
     background-color: var(--header-bg);
@@ -90,17 +104,15 @@ button {
     gap: 28px;
 }
 .header-action__signup {
-    background-color: #2e80ce;
+    background-color: var(--btn-color);
     min-width: 104px;
-    height: 44px;
+    --height: 44px;
 }
 .logo {
     font-size: 1rem;
     display: flex;
     gap: 6px;
     display: inline-flex;
-}
-.logo_text {
 }
 .logo_brand {
     display: block;
@@ -112,7 +124,6 @@ button {
 .logo_brand--small {
     color: #c9d2da;
     font-weight: 300;
-    font-style: Light;
     font-size: 1.2em;
     letter-spacing: 0%;
     text-align: right;
@@ -120,7 +131,7 @@ button {
 .logo_circle {
     width: 3em;
     height: 3em;
-    background-color: #2e80ce;
+    background-color: var(--btn-color);
     border-radius: 50%;
     display: inline-block;
     position: relative;
@@ -194,8 +205,193 @@ button {
     border-radius: 6px;
     margin-left: -6px;
 }
-.hero__btn {
+
+/* =============================================== service =============================================== */
+.service {
+    padding: 170px 0;
+}
+
+.section-heading {
+    font-family: Sora;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 5rem;
+    line-height: 60px;
+    letter-spacing: -2%;
+    min-width: 311px;
+    opacity: 1;
+    color: #10375c;
+}
+
+.service-heading {
+    text-align: center;
+}
+
+.section-desc {
+    margin-top: 1.8rem;
+    max-width: 468px;
+    font-family: Sora;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #575f66;
+    opacity: 1;
+}
+
+.service-desc {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.service-row {
+    margin-top: 70px;
+    display: flex;
+    gap: 130px;
+}
+
+.service-img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.function {
+    margin-top: 35px;
+}
+
+.function_item {
+    display: flex;
+    padding: 21px 0 20px 22px;
+}
+
+.function_item:hover {
+    box-shadow: 0px 14px 28px 0px #0000000d;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.function_content {
+    margin-left: 19px;
+}
+
+.function_content--title {
+    min-width: 116px;
+    opacity: 1;
+    font-family: Sora;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--header-bg);
+}
+
+.function_content--desc {
+    margin-top: 8px;
+    max-width: 308px;
+    min-height: 56px;
+    font-family: Sora;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 28px;
+    letter-spacing: 0%;
+}
+
+.teeth {
+    background: #eff6fd;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.teeth path {
+    fill: var(--header-bg);
+}
+
+.function_item:hover .teeth {
+    background: var(--btn-color);
+    transition: 0.3s ease-in-out;
+}
+
+.function_item:hover .teeth path {
+    transition: 0.3s ease-in-out;
+    fill: #ffffff;
+}
+
+.function-btn {
+    margin-top: 55px;
+}
+
+/* =============================================== work =============================================== */
+
+.work {
+    padding: 100px 0;
+    background-color: #f6fbff;
+}
+
+.method {
+    display: flex;
+    gap: 30px;
+}
+
+.method-container {
+    margin-top: 43px;
+    margin-left: 42px;
+}
+
+.method-title {
+    font-family: Sora;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    color: #10375c;
+    margin-top: 18px;
+}
+
+.method-desc {
+    font-family: Sora;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #575f66;
+    margin-top: 28px;
+}
+
+.method-item a {
+    font-family: Sora;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 28px;
+    letter-spacing: 0%;
+    margin-top: 18px;
+    color: #575f66;
+    display: block;
+    margin-bottom: 43px;
+}
+
+.method-item {
+    margin-top: 86px;
+    border: 16px solid #eaf6ff;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.method-item:hover {
+    transition: 0.3s ease-in-out;
+    border-color: var(--btn-color);
+    transform: translateY(-10px);
+}
+
+.method-item:hover a {
+    color: var(--btn-color);
+    font-weight: 400;
 }
