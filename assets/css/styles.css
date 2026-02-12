@@ -594,6 +594,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
 }
+
 .event-heading {
     display: inline;
     font-size: 1.6rem;
@@ -608,11 +609,24 @@ button {
     line-height: 2.4rem;
 }
 .event-item {
-    max-width: 270px;
+    max-width: 272px;
+    border-radius: 12px;
+    border: 1px solid #e8ebee;
+    transition: 0.25s;
+}
+.event-img {
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+.event-item:hover {
+    box-shadow: 0px 18px 50px 0px #0000000d;
+    border: 1px solid #ffffff;
+}
+.event-item:hover .event-item__image {
+    transform: scale(1.1);
 }
 .item-content {
     padding: 18px 0 21px 22px;
-    border: 1px solid #e8ebee;
 }
 .event-item__image {
     display: block;
@@ -620,6 +634,7 @@ button {
     height: 172px;
     border-radius: 12px 12px 0 0;
     object-fit: cover;
+    transition: 0.25s;
 }
 .item-content__btn {
     display: inline-block;
