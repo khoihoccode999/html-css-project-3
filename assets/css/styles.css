@@ -510,3 +510,125 @@ button {
     stroke: #ffffff;
     transition: 0.1s ease-in-out;
 }
+
+/* =============================================== Apps =============================================== */
+.apps {
+    margin-top: 265px;
+}
+.apps-install {
+    background-color: #2e80ce;
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+}
+.apps-phone {
+    position: absolute;
+    margin-left: 70px;
+    top: -95px;
+}
+
+.apps-phone__image {
+    width: 284px;
+    height: 522px;
+}
+
+.apps-info {
+    padding-top: 76px;
+    padding-bottom: 75px;
+    margin-left: auto;
+    margin-right: 70px;
+    color: #ffffff;
+}
+
+.apps-heading {
+    color: #ffffff;
+}
+.apps-heading span {
+    display: block;
+}
+
+.apps-desc {
+    color: #ffffff;
+    max-width: 586px;
+}
+.apps-info__btn {
+    display: flex;
+    margin-top: 38px;
+    gap: 28px;
+}
+.apps-info__image {
+    width: 135px;
+    height: 40px;
+}
+/* =============================================== Event =============================================== */
+
+.event {
+    margin-top: 170px;
+    margin-bottom: 170px;
+}
+.event-news {
+    display: flex;
+    gap: 130px;
+}
+.event-info {
+    margin-top: 68px;
+}
+.event-info__heading {
+    width: 470px;
+    height: 120px;
+}
+.event-info__btn {
+    margin-top: 28px;
+    font-weight: bold;
+    color: #10375c;
+    text-decoration: underline;
+    display: block;
+}
+.event_control {
+    margin-top: 28px;
+    justify-content: start;
+}
+
+.event-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+.event-heading {
+    display: inline;
+    font-size: 1.6rem;
+    line-height: 26px;
+    width: 224px;
+}
+.event-desc {
+    margin-top: 10px;
+    width: 226px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.event-item {
+    max-width: 270px;
+}
+.item-content {
+    padding: 18px 0 21px 22px;
+    border: 1px solid #e8ebee;
+}
+.event-item__image {
+    display: block;
+    width: 270px;
+    height: 172px;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+}
+.item-content__btn {
+    display: inline-block;
+    color: #10375c;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-top: 12px;
+    transition: 0.25s;
+}
+.item-content__btn:hover {
+    color: #2e80ce;
+}
