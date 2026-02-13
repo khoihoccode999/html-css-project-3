@@ -522,6 +522,7 @@ button {
     border-radius: 4px;
     display: flex;
     position: relative;
+    max-height: 427px;
 }
 .apps-phone {
     position: absolute;
@@ -535,6 +536,7 @@ button {
 }
 
 .apps-info {
+    width: 50%;
     padding-top: 76px;
     padding-bottom: 75px;
     margin-left: auto;
@@ -551,7 +553,7 @@ button {
 
 .apps-desc {
     color: #ffffff;
-    max-width: 586px;
+    min-width: 586px;
 }
 .apps-info__btn {
     display: flex;
