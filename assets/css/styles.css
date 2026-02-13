@@ -564,7 +564,6 @@ button {
 
 .event {
     margin-top: 170px;
-    margin-bottom: 170px;
 }
 .event-news {
     display: flex;
@@ -646,4 +645,37 @@ button {
 }
 .item-content__btn:hover {
     color: #2e80ce;
+}
+/* =============================================== Welcome =============================================== */
+.welcome {
+    margin-top: 170px;
+}
+.welcome-width {
+    background-color: #f6fbff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome-heading {
+    margin-top: 100px;
+    position: relative;
+}
+.welcome-heading::after {
+    position: absolute;
+    right: 338px;
+    bottom: -18px;
+    content: "";
+    display: inline-block;
+    width: 136px;
+    height: 2px;
+    background-color: #2e80ce;
+}
+.welcome-desc {
+    text-align: center;
+    margin-top: 38px;
+    max-width: 617px;
+}
+.welcome-width__btn {
+    margin-top: 38px;
+    margin-bottom: 100px;
 }
