@@ -50,17 +50,6 @@ SVG Icons
 
 Responsive Layout Techniques (Flexbox / Grid)
 
-📂 Project Structure
-shine-smile/
-│
-├── index.html
-├── assets/
-│   ├── css/
-│   │   ├── reset.css
-│   │   └── styles.css
-│   ├── img/
-│   └── favicon/
-
 🖼️ Preview Sections
 1️⃣ Hero Section
 
