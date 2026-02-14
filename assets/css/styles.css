@@ -693,7 +693,7 @@ button {
 .footer-width {
     display: grid;
     grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
-    gap: 78px;
+    column-gap: 78px;
     padding-top: 100px;
     position: relative;
 }
@@ -778,7 +778,9 @@ span.footer-desc:hover {
     border: 1px solid #406181;
     padding-left: 10px;
     background-color: transparent;
-    color: #fff;
+}
+.footer-form__email::placeholder {
+    color: #9ca8b1;
 }
 .footer-form__submit {
     border: none;
