@@ -691,7 +691,8 @@ button {
     background-color: var(--header-bg);
 }
 .footer-width {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
     gap: 78px;
     padding-top: 100px;
     position: relative;
@@ -732,7 +733,6 @@ button {
 }
 p.footer-desc {
     margin-top: 21px;
-    margin-right: 58px;
 }
 span.footer-desc {
     min-width: 134px;
